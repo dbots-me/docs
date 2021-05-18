@@ -125,6 +125,7 @@ GET /bots/:bot_id/stats
 | shards.server_count           | `integer`                                                                     | The server count of the shard                                 |
 | shards.user_count             | `integer`                                                                     | The user count of the shard                                   |
 | shards.voiceconnections_count | `integer`                                                                     | The voice connections count of the shard                      |
+| shards.updated                | `date (ISO8601)`                                                              | Date when this shard was last updated                         |
 | bot_status                    | `string`                                                                      | The discord status of the bot (OFFLINE, ONLINE, IDLE, DND)    |
 | bot_lastseen                  | `date (ISO8601)`                                                              | When the bot was last seen (bot_status != OFFLINE)            |
 | bot_lastfetch                 | `date (ISO8601)`                                                              | When the bot was last checked                                 |
