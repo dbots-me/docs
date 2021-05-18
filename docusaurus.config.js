@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'dbots.me Documentation',
   url: 'https://docs.dbots.me/',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'https://cdn.dbots.me/static/favicon-white.svg',
   organizationName: 'dbots-me',
@@ -100,5 +100,11 @@ module.exports = {
       docsRouteBasePath: '/',
       indexBlog: false,
     }]
+  ],
+  scripts: [
+    {
+      src: '/assets/js/custom.js',
+      async: true,
+    },
   ],
 };
